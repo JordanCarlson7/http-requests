@@ -99,3 +99,51 @@ function App() {
 }
 
 export default App;
+
+
+  /* SINGLE RANDOM ACTIVITY CALL */
+  // const singleRandomHandler = useCallback(async () => {
+  //   try {
+  //     const response = await fetch(singleRandom);
+  //     if (!response.ok) {
+  //       throw new Error("Something went wrong!");
+  //     }
+  //     const data = await response.json();
+
+  //     const transformedData = {
+  //       activity: data.activity,
+  //       type: data.type,
+  //       participants: data.participants,
+  //       price: data.price,
+  //       link: data.link,
+  //       key: data.key,
+  //       accessibility: data.accessibility,
+  //     };
+  //     activities.push(transformedData);
+  //     setActivities(activities);
+      
+  //     console.log(activities);
+  //   } catch (error) {}
+  // }, []);
+
+  // /* MULTI RANDOM ACTIVITY CALL */
+  // const multiRandomHandler = () => {
+  //   for (let i = 0; i < 40; i++) {
+  //     singleRandomHandler();
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   singleRandomHandler();
+  // }, [singleRandomHandler, activities]);
+
+  // let [activities, setActivities] = useState([{
+  //   activity: "Patronize a local independent restaurant",
+  //   type: "recreational",
+  //   participants: 1,
+  //   price: 0.2,
+  //   link: "",
+  //   key: "5319204",
+  //   accessibility: 0.1,
+  // }]);
+
